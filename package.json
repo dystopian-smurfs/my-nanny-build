@@ -4,7 +4,8 @@
   "description": "Build server for the My-Nanny solution",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+     "start": "babel-node server.js --presets es2015"
   },
   "author": "Robin Gulbrandsen",
   "license": "MIT",
