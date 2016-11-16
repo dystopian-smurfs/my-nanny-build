@@ -24,9 +24,9 @@ const getChanges = (diretory, projectName, gitLink, port) => {
   shell.exec('npm run start');
 };
 
-const restartPort = (port) => {
-  
-};
+app.get('/', (req, res) => {
+   res.sendStatus(200);
+});
 
 app.post('/test', (req, res) => {
   getChanges('~/code', 'build-test', 'https://github.com/dystopian-smurfs/build-test.git', 8090);
